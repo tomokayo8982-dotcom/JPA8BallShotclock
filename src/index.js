@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 
 import App from "./App";
 
+import "./serviceworker";
+
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
@@ -14,6 +16,6 @@ root.render(
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/serviceworker.js", { scope: "/" });
+    navigator.serviceWorker.register("/serviceworker.js");
   });
 }
