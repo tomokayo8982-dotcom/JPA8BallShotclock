@@ -1,6 +1,7 @@
 {
   "short_name": "ShotClock",
   "name": "JPA Shot Clock Timer",
+  "version": "3",
   "icons": [
     {
       "src": "icon-192.png",
